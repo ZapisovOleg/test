@@ -30,7 +30,7 @@ body{
 }
 
 main{
-  .banners{
+  .banner{
     display: flex;
     .banners-item{
 
@@ -116,6 +116,153 @@ h3{
   }
 
 }
+
+.news{
+  height: 500px;
+  background-color: #FAFAFA;
+  .news-title{
+    text-align: center;
+    h3{
+          font-size: 28px;
+    color: #000000;
+    font-family: 'Roboto-Regular';
+    text-transform: uppercase;
+    padding-top: 90px;
+}
+    }
+  
+  .news-box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 65px;
+    
+
+    .news-box__item{
+position: relative;
+    
+    .news-box__item-calendar{
+        background-color: #FDAA4B;
+        width: 124px;
+        height: 40px;
+        position: absolute;
+        z-index: 10;
+        left: 16px;
+        top: 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+     .news-box__item-message{
+      position: absolute;
+    background-color: #fff;
+    top: 215px;
+    background-color: #fff;
+    width: 375px;
+    left: 15px;
+    img{
+      padding-left: 10px;
+    }
+      h3{
+        font-size: 18px;
+        padding-left: 10px;
+      }
+      p{
+        font-size: 14px;
+        padding-left: 10px;
+      }
+     }
+    }
+  }
+}
+
+
+.open-button {
+  background-color: #2196F3;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #1976D2;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+.form-container .cancel {
+  background-color: #448AFF;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .bh-stars {
   display: flex;
