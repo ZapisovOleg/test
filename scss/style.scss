@@ -1,0 +1,317 @@
+@import "reset.scss";
+
+
+body{
+  margin: 0;
+}
+
+
+.navbar{
+  background-color: #32656A;
+  height: 110px;
+.navbar-search{
+  padding-right: 55px;
+  margin-left: 15px;
+  form{
+    min-width: 760px;
+    border: none;
+    outline: none;
+    .btn{
+      background-color:  #FDAA4B;
+      position: relative;
+      left: -10px;
+
+    }
+  }
+}
+.navbar-icon{
+  margin: 5px;
+}
+}
+
+main{
+  .banners{
+    display: flex;
+    .banners-item{
+
+    }
+
+  }
+}
+
+.category{
+  background-color: #FAFAFA;
+
+  .category__title{
+    text-align: center;
+    h3{
+  font-size: 28px;
+     color: #000000;
+       font-family: 'Roboto-Regular';
+       text-transform: uppercase;
+       padding-top: 90px;
+
+}
+  }
+  .row{
+    text-align: center;
+    margin-top: 65px;
+  .category__text{
+    text-align: center;
+    span{
+      font-size: 16px;
+      color: #000;
+       font-family: 'Roboto-Regular';
+
+    }
+  }
+}
+.deal{
+  .deal__title{
+text-align: center;
+h3{
+  font-size: 28px;
+     color: #000000;
+       font-family: 'Roboto-Regular';
+       text-transform: uppercase;
+       padding-top: 90px;
+
+}
+  }
+  .row{
+    flex-wrap: nowrap;
+    #col{
+      background-color: #fff;
+    margin: 5px;
+      img{
+        margin-top: 20px;
+      }
+      }
+    }
+    .deal__text{
+
+      span{
+          font-size: 18px;
+        color: #000000;
+        position: relative;
+        left: -15px;
+
+
+         font-family: 'Roboto-Regular'; 
+      }
+      p{
+            font-size: 18px;
+        color: #000000;
+ 
+
+
+         font-family: 'Roboto-Regular'; 
+      }
+      #del{
+        font-size: 14px;
+        color: #9999;
+         font-family: 'Roboto-Regular';
+      }
+    }
+  }
+
+}
+
+.bh-stars {
+  display: flex;
+  justify-content: end;
+  margin: 1rem auto;
+  
+  .bh-star { 
+    width: 2rem; 
+    height: 1rem;
+
+    .outline {
+      fill: gold;
+    }
+
+    .full,
+    .left-half {
+      fill: transparent;
+    }
+  }
+  
+  //fill in full stars
+  @for $i from 1 through 5 {
+    &[data-bh-rating^="#{$i}"] {
+      .bh-star--1 {
+        .full { fill: gold; }
+      }
+    }
+  }
+  
+  @for $i from 2 through 5 {
+    &[data-bh-rating^="#{$i}"] {
+      .bh-star--2 {
+        .full { fill: gold; }
+      }
+    }
+  }
+  
+  @for $i from 3 through 5 {
+    &[data-bh-rating^="#{$i}"] {
+      .bh-star--3 {
+        .full { fill: gold; }
+      }
+    }
+  }
+  
+  @for $i from 4 through 5 {
+    &[data-bh-rating^="#{$i}"] {
+      .bh-star--4 {
+        .full { fill: gold; }
+      }
+    }
+  }
+  
+  &[data-bh-rating^="5"] {
+    .bh-star--5 {
+      .full { fill: gold; }
+    }
+  }
+  
+  //fill in half stars
+  @for $i from 5 through 9 {
+    &[data-bh-rating^="0.#{$i}"] {
+      .bh-star--1 {
+        .left-half { fill: gold; }
+      }
+    }
+    
+    &[data-bh-rating^="1.#{$i}"] {
+      .bh-star--2 {
+        .left-half { fill: gold; }
+      }
+    }
+    
+    &[data-bh-rating^="2.#{$i}"] {
+      .bh-star--3 {
+        .left-half { fill: gold; }
+      }
+    }
+    
+    &[data-bh-rating^="3.#{$i}"] {
+      .bh-star--4 {
+        .left-half { fill: gold; }
+      }
+    }
+    
+    &[data-bh-rating^="4.#{$i}"] {
+      .bh-star--5 {
+        .left-half { fill: gold; }
+      }
+    }
+  }
+  
+  &.rounding-up {
+    //fill in full stars
+    @for $i from 1 through 5 {
+      &[data-bh-rating^="#{$i}"] {
+        .bh-star--1 {
+          .full { fill: gold; }
+        }
+      }
+    }
+
+    @for $i from 2 through 5 {
+      &[data-bh-rating^="#{$i}"] {
+        .bh-star--2 {
+          .full { fill: gold; }
+        }
+      }
+    }
+
+    @for $i from 3 through 5 {
+      &[data-bh-rating^="#{$i}"] {
+        .bh-star--3 {
+          .full { fill: gold; }
+        }
+      }
+    }
+
+    @for $i from 4 through 5 {
+      &[data-bh-rating^="#{$i}"] {
+        .bh-star--4 {
+          .full { fill: gold; }
+        }
+      }
+    }
+
+    &[data-bh-rating^="5"] {
+      .bh-star--5 {
+        .full { fill: gold; }
+      }
+    }
+
+    @for $i from 6 through 9 {
+      &[data-bh-rating^="0.#{$i}"] {
+        .bh-star--1 {
+          .full { fill: gold; }
+        }
+      }
+      
+      &[data-bh-rating^="1.#{$i}"] {
+        .bh-star--2 {
+          .full { fill: gold; }
+        }
+      }
+
+      &[data-bh-rating^="2.#{$i}"] {
+        .bh-star--3 {
+          .full { fill: gold; }
+        }
+      }
+
+      &[data-bh-rating^="3.#{$i}"] {
+        .bh-star--4 {
+          .full { fill: gold; }
+        }
+      }
+
+      &[data-bh-rating^="4.#{$i}"] {
+        .bh-star--5 {
+          .full { fill: gold; }
+        }
+      }
+    }
+    
+    //fill in half stars
+    @for $i from 0 through 5 {
+      &[data-bh-rating^="0.#{$i}"] {
+        .bh-star--1 {
+          .left-half { fill: gold; }
+        }
+      }
+      
+      &[data-bh-rating^="1.#{$i}"] {
+        .bh-star--2 {
+          .left-half { fill: gold; }
+        }
+      }
+
+      &[data-bh-rating^="2.#{$i}"] {
+        .bh-star--3 {
+          .left-half { fill: gold; }
+        }
+      }
+
+      &[data-bh-rating^="3.#{$i}"] {
+        .bh-star--4 {
+          .left-half { fill: gold; }
+        }
+      }
+
+      &[data-bh-rating^="4.#{$i}"] {
+        .bh-star--5 {
+          .left-half { fill: gold; }
+        }
+      }
+    }
+  }
+}
+
