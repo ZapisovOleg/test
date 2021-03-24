@@ -4,14 +4,19 @@
 body{
   margin: 0;
 }
+html, body {
+  overflow-x: hidden;
+  
+
+}
 
 
 .navbar{
   background-color: #32656A;
-  height: 110px;
+
 .navbar-search{
-  padding-right: 55px;
-  margin-left: 15px;
+ 
+  
   form{
     min-width: 760px;
     border: none;
@@ -29,15 +34,11 @@ body{
 }
 }
 
-main{
-  .banner{
-    display: flex;
-    .banners-item{
 
-    }
+ #right-picture-banner{
+  height: 170px;
+ }
 
-  }
-}
 
 .category{
   background-color: #FAFAFA;
@@ -54,7 +55,7 @@ main{
 }
   }
   .row{
-    text-align: center;
+    
     margin-top: 65px;
   .category__text{
     text-align: center;
@@ -118,7 +119,7 @@ h3{
 }
 
 .news{
-  height: 500px;
+  min-height: 1200px;
   background-color: #FAFAFA;
   .news-title{
     text-align: center;
