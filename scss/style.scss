@@ -1,43 +1,40 @@
 @import "reset.scss";
 
-
 body{
   margin: 0;
 }
 html, body {
   overflow-x: hidden;
-  
-
 }
-
 
 .navbar{
   background-color: #32656A;
+  .navbar-brand{
+    position: relative;
+    left: -20px;
+  }
+  .navbar-search{
 
-.navbar-search{
- 
-  
-  form{
-    min-width: 760px;
-    border: none;
-    outline: none;
-    .btn{
-      background-color:  #FDAA4B;
-      position: relative;
-      left: -10px;
 
+    form{
+      min-width: 760px;
+      border: none;
+      outline: none;
+      .btn{
+        background-color:  #FDAA4B;
+        position: relative;
+        left: -10px;
+
+      }
     }
   }
-}
-.navbar-icon{
-  margin: 5px;
-}
+  .navbar-icon{
+    margin: 5px;
+  }
 }
 
 
- #right-picture-banner{
-  height: 170px;
- }
+
 
 
 .category{
@@ -46,72 +43,74 @@ html, body {
   .category__title{
     text-align: center;
     h3{
-  font-size: 28px;
-     color: #000000;
-       font-family: 'Roboto-Regular';
-       text-transform: uppercase;
-       padding-top: 90px;
-
-}
-  }
-  .row{
-    
-    margin-top: 65px;
-  .category__text{
-    text-align: center;
-    span{
-      font-size: 16px;
-      color: #000;
-       font-family: 'Roboto-Regular';
+      font-size: 28px;
+      color: #000000;
+      font-family: 'Roboto-Regular';
+      text-transform: uppercase;
+      padding-top: 90px;
 
     }
   }
-}
-.deal{
-  .deal__title{
-text-align: center;
-h3{
-  font-size: 28px;
-     color: #000000;
-       font-family: 'Roboto-Regular';
-       text-transform: uppercase;
-       padding-top: 90px;
-
-}
-  }
   .row{
-    flex-wrap: nowrap;
-    #col{
-      background-color: #fff;
-    margin: 5px;
-      img{
-        margin-top: 20px;
+    .col-xl-2{
+      text-align: center !important;
+    }
+    margin-top: 65px;
+    .category__text{
+      text-align: center;
+      span{
+        font-size: 16px;
+        color: #000;
+        font-family: 'Roboto-Regular';
+
       }
+    }
+  }
+  .deal{
+    .deal__title{
+      text-align: center;
+      h3{
+        font-size: 28px;
+        color: #000000;
+        font-family: 'Roboto-Regular';
+        text-transform: uppercase;
+        padding-top: 90px;
+
+      }
+    }
+    .row{
+      flex-wrap: nowrap;
+      #col{
+        background-color: #fff;
+        margin: 5px;
+        img{
+          margin-top: 20px;
+        }
       }
     }
     .deal__text{
 
       span{
-          font-size: 18px;
+        font-size: 18px;
         color: #000000;
         position: relative;
-        left: -15px;
+   
 
 
-         font-family: 'Roboto-Regular'; 
+        font-family: 'Roboto-Regular'; 
       }
       p{
-            font-size: 18px;
+        font-size: 18px;
         color: #000000;
- 
 
 
-         font-family: 'Roboto-Regular'; 
+
+        font-family: 'Roboto-Regular'; 
       }
       #del{
         font-size: 14px;
         color: #9999;
-         font-family: 'Roboto-Regular';
+        font-family: 'Roboto-Regular';
       }
     }
   }
@@ -119,18 +118,18 @@ h3{
 }
 
 .news{
-  min-height: 1200px;
+  min-height: 600px;
   background-color: #FAFAFA;
   .news-title{
     text-align: center;
     h3{
-          font-size: 28px;
-    color: #000000;
-    font-family: 'Roboto-Regular';
-    text-transform: uppercase;
-    padding-top: 90px;
-}
+      font-size: 28px;
+      color: #000000;
+      font-family: 'Roboto-Regular';
+      text-transform: uppercase;
+      padding-top: 90px;
     }
+  }
   
   .news-box{
     display: flex;
@@ -139,9 +138,9 @@ h3{
     
 
     .news-box__item{
-position: relative;
-    
-    .news-box__item-calendar{
+      position: relative;
+
+      .news-box__item-calendar{
         background-color: #FDAA4B;
         width: 124px;
         height: 40px;
@@ -153,25 +152,25 @@ position: relative;
         align-items: flex-end;
         justify-content: center;
       }
-     .news-box__item-message{
-      position: absolute;
-    background-color: #fff;
-    top: 215px;
-    background-color: #fff;
-    width: 375px;
-    left: 15px;
-    img{
-      padding-left: 10px;
-    }
-      h3{
-        font-size: 18px;
-        padding-left: 10px;
+      .news-box__item-message{
+        position: absolute;
+        background-color: #fff;
+        top: 215px;
+        background-color: #fff;
+        width: 375px;
+        left: 15px;
+        img{
+          padding-left: 10px;
+        }
+        h3{
+          font-size: 18px;
+          padding-left: 10px;
+        }
+        p{
+          font-size: 14px;
+          padding-left: 10px;
+        }
       }
-      p{
-        font-size: 14px;
-        padding-left: 10px;
-      }
-     }
     }
   }
 }
@@ -221,6 +220,7 @@ position: relative;
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
   background-color: #ddd;
   outline: none;
+  
 }
 
 .form-container .btn {
