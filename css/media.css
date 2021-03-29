@@ -35,6 +35,9 @@
 	}
 
 	@media only screen and (max-width:992px){
+		.category .deal .deal__text{
+			text-align: center;
+		}
 		.news{
 			height: 1250px;
 		}
@@ -71,7 +74,11 @@
 		}
 
 	}
-
+@media only screen and (max-width:767px){
+.form-container{
+	margin-right: 30px;
+}
+}
 	@media only screen and (max-width:575px){
 		.category .row{
 			text-align: center;

@@ -13,6 +13,9 @@ html, body {
     position: relative;
     left: -20px;
   }
+  .toggle{
+    height: 30px;
+  }
   .navbar-search{
 
 
@@ -33,6 +36,12 @@ html, body {
   }
 }
 
+.banner{
+  background-color: #FAFAFA;
+ .carousel{
+  margin-top: 30px;
+ }
+}
 
 
 
@@ -47,7 +56,8 @@ html, body {
       color: #000000;
       font-family: 'Roboto-Regular';
       text-transform: uppercase;
-      padding-top: 90px;
+    
+      margin-bottom: 65px;
 
     }
   }
@@ -55,13 +65,16 @@ html, body {
     .col-xl-2{
       text-align: center !important;
     }
-    margin-top: 65px;
+   
     .category__text{
       text-align: center;
-      span{
+      a{
         font-size: 16px;
         color: #000;
         font-family: 'Roboto-Regular';
+        text-decoration: none;
+        position: relative;
+        top: 5px;
 
       }
     }
@@ -75,21 +88,25 @@ html, body {
         font-family: 'Roboto-Regular';
         text-transform: uppercase;
         padding-top: 90px;
+        margin-bottom: 65px;
 
       }
     }
     .row{
       flex-wrap: nowrap;
-      #col{
+      .col-xl-3{
         background-color: #fff;
         margin: 5px;
+        text-align: center;
         img{
           margin-top: 20px;
         }
       }
     }
     .deal__text{
-
+        text-align: left;
+        position: relative;
+        left: 10px;
       span{
         font-size: 18px;
         color: #000000;
@@ -148,9 +165,10 @@ html, body {
         z-index: 10;
         left: 16px;
         top: 10px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        text-align: center;
+        p{
+          line-height: 40px;
+        }
       }
       .news-box__item-message{
         position: absolute;
@@ -159,6 +177,8 @@ html, body {
         background-color: #fff;
         width: 375px;
         left: 15px;
+        box-shadow: 0px 0px 8px 0px #000000;
+
         img{
           padding-left: 10px;
         }
@@ -177,33 +197,29 @@ html, body {
 
 
 .open-button {
-  background-color: #2196F3;
-  color: white;
+
+ 
   font-size: 15px;
   font-weight: bold;
-  padding: 16px 20px;
+background: transparent;
   border: none;
   cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
+  
 
 }
 
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
+  bottom: 130px;
+
+
   z-index: 9;
   
 }
 
 .form-container {
-  max-width: 300px;
+ 
   padding: 10px;
   background-color: white;
   
@@ -220,7 +236,7 @@ html, body {
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
   background-color: #ddd;
   outline: none;
-  
+
 }
 
 .form-container .btn {
